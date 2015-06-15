@@ -4,8 +4,6 @@ They can be rearranged
 
 --------------------- TODO ----------------------------
 - Install TLP project ( to be tested ) 
-
-
 - Put the machine in oem mode using oem-config-prepare
 - Intégrate swapspace ( http://pqxx.org/development/swapspace/) : no more disk space wasted
 - Enable hibernation (not really possible without swapspace )
@@ -13,34 +11,30 @@ They can be rearranged
 - Associate the exe files with wine to opened automagically ( even in browsers) 
 - Install the Main Printers drivers for OOTB functionning including network scanning ( Epson, Canon, Brother)
 - add a simple way to control the desktop of users, ondemand (gitso preinstalled but not click n go) 
-
 - Enable chromium GPU video decode
-
-
-
 - .bin files should executed instead of being opened with archiver
-
-- Ajust Sleep timeout
 - Disable Apport
-
 - Make sure the network interface will always be XXX0
 - Autorestore backlight level : see https://launchpad.net/~nrbrtx/+archive/ubuntu/sysvinit-backlight
-- Show the % and time of battery as a default
-- Clean the apt cache
 - Disable the update-apt-xapi bs bug 655831
-- Put size of launcher to 24
-- Enable rolling desktop backgrounds (including one for ekimia ?)
-- Enable Windows menu in the window title bar
 - Enable full GPU support on chrome (flag ignoregpublacklist) 
-- Disable online search in the launcher as default 
-- Enable sleep on lid close
-- Remove the Amazon Launcher
 - handle Aiplane mode for Clevo W840SU
 
 ---------------------- DONE (Manual) ----------------------------------
+
 - enable canonical repo
-- enable better defaults for updates ( 2 weeks ,security auto)
+- enable better defaults for updates ( Check every 2 days,install security auto, show others every 2 weeks )
+- Enable sleep on lid close
+- Disable online search in the launcher as default ( vie privéee - recherches) 
+- Enable Windows menu in the window title bar
+- Put size of launcher to 24
+- Show the % and time of battery as a default
+- Ajust Sleep timeout to 30 min
+First run 
+- Set wallpaper to ekimia one
+Second run
 
 ---------------------- DONE ----------------------------------
-
+- Clean the apt cache
+- Remove the Amazon Launcher
 - Install thermald
