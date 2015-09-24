@@ -21,6 +21,7 @@ They can be rearranged
 - handle Aiplane mode for Clevo W840SU
 - Intel Microcode & pstates ?
 - Fix for the Language window appearing afeter user creation
+- Enable Verr Num when the keyboard has a Num pad like W550SU1
 - Update nautilus options to ask to run shell script
 
 ---------------------- DONE (Manual) ----------------------------------
