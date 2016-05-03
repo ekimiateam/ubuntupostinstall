@@ -3,6 +3,8 @@ They can be rearranged
 
 
 --------------------- TODO ----------------------------
+- To add for 16.04 : unity-tweak-tool
+- To be removed for 16.04 : lsb-core , arista , compiz stuff , myunity, xbmc ( replaced by kodi) 
 - Update GRUB_RECORDFAIL_TIMEOUT=1 so oem-config does not show grub
 - Install TLP project ( to be tested ) 
 - Put the machine in oem mode using oem-config-prepare
