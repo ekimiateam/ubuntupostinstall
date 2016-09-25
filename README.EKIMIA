@@ -15,8 +15,22 @@
  
  - Launch script again 
  
+ - run the checkBox certification program to be Sure every thing is alright.
+ 
  - Prepare Image : sudo oem-config-prepare
  
  - Boot on fog with PXE : Quick Register machine, 
  
  - ON Fog web interface associate machine with a new image Ubuntu.16.04.1_DD.MM.YY
+ 
+ - Create a simple tasks on Fog for uploading this machine.
+ 
+ - Reboot again the machine on Fog , upload is automatic.
+ 
+ - When finished set the QUICK registration in fog to the newly created image  Ubuntu.16.04.1_DD.MM.YY.
+ 
+ 
+ - Reboot again the machine on Fog but delete it from registrey and do a quick registration.
+ 
+ - Then run the checkBox certification program to be Sure every thing is still alright.
+ 
