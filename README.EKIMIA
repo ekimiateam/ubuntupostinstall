@@ -1,0 +1,22 @@
+ How to create an Ekimia Image : 
+ 
+ 
+ -- 16.04.1 
+ 
+ - Install 16.04.1 in Bios legacy mode , partition in Manual mode with 4 GB swap  
+ 
+ - Clone repo on machine 
+ 
+ - Do manual Step from TODO File
+ 
+ - Launch script with  	sudo python ubuntu-14.04-postinstall.py - c ubuntu-16.04-unity-postinstall.cfg
+ 
+ - Set ekimia WallPaper
+ 
+ - Launch script again 
+ 
+ - Prepare Image : sudo oem-config-prepare
+ 
+ - Boot on fog with PXE : Quick Register machine, 
+ 
+ - ON Fog web interface associate machine with a new image Ubuntu.16.04.1_DD.MM.YY
