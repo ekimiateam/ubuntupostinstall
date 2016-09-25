@@ -17,12 +17,11 @@ They can be rearranged
 - Enable chromium GPU video decode
 - .bin files should executed instead of being opened with archiver
 
-- Make sure the network interface will always be XXX0
-- Autorestore backlight level : see https://launchpad.net/~nrbrtx/+archive/ubuntu/sysvinit-backlight
-- Disable the update-apt-xapi bs bug 655831
+- Enable Zswap ?
+- Disable the update-apt-xapi bs bug 655831 ( useful anymore ? )
 - Enable full GPU support on chrome (flag ignoregpublacklist) 
 - handle Aiplane mode for Clevo W840SU
-- Intel Microcode & pstates ?
+- Intel  pstates ? -> 
 - Fix for the Language window appearing afeter user creation
 - Enable Verr Num when the keyboard has a Num pad like W550SU1
 - Update nautilus options to ask to run shell script
@@ -30,7 +29,7 @@ They can be rearranged
 ---------------------- DONE (Manual) ----------------------------------
 - Disable Apport
 - enable canonical repo
-- enable better defaults for updates ( Check every 2 days,install security auto, show others every 2 weeks )
+- enable better defaults for updates ( Check every 2 days,download  security auto, show others every 2 weeks )
 - Enable sleep on lid close
 - Disable online search in the launcher as default ( vie privéee - recherches) 
 - Enable Windows menu in the window title bar
