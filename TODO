@@ -28,10 +28,9 @@ They can be rearranged
 
 ---------------------- DONE (Manual) ----------------------------------
 - Disable Apport
-- enable canonical repo
+- enable canonical partner repo
 - enable better defaults for updates ( Check every 2 days,download  security auto, show others every 2 weeks )
 - Enable sleep on lid close
-- Disable online search in the launcher as default ( vie privéee - recherches) 
 - Enable Windows menu in the window title bar
 - Put size of launcher to 24
 - Show the % and time of battery as a default
