@@ -5,7 +5,7 @@
  
  - Install 16.04.1 in Bios legacy mode , partition in Manual mode with Partition 1 : /  - Partition 2 : 4 GB swap  
  
- - Clone this repo on machine 
+ - Clone this repo on machine git clone https://github.com/EkimiaSAS/ubuntupostinstall.git
  
  - Do manual Step from TODO File
  
