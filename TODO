@@ -27,7 +27,7 @@ They can be rearranged
 - Update nautilus options to ask to run shell script
 
 ---------------------- DONE (Manual) ----------------------------------
-- Disable Apport
+
 - enable canonical partner repo
 - enable better defaults for updates ( Check every 2 days,download  security auto, show others every 2 weeks )
 - Enable sleep on lid close
@@ -40,6 +40,7 @@ First run
 Second run
 
 ---------------------- DONE ----------------------------------
+- Disable Apport
 - To add for 16.04 : unity-tweak-tool
 - Clean the apt cache
 - Remove the Amazon Launcher
