@@ -19,7 +19,7 @@
  
  - Prepare Image : sudo oem-config-prepare
  
- - Boot on fog with PXE : Quick Register machine, 
+ - Boot on fog with PXE : Full Register machine
  
  - ON Fog web interface associate machine with a new image Ubuntu.16.04.1_DD.MM.YY
  
