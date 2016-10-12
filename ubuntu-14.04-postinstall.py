@@ -307,9 +307,6 @@ def main(argv):
     for pkg in pkg_list_others.keys():
         showexec ("Install packages "+pkg, _APT_INSTALL+" "+pkg_list_others[pkg])
 
-    # Allow user to read DVD (CSS)
-    showexec ("DVDs CSS encryption reader", "sh /usr/share/doc/libdvdread4/install-css.sh")
-
     # Download and install dotfiles: vimrc, prompt...
     if (config.has_section("dotfiles")):
         # Create the bashrc.d subfolder
