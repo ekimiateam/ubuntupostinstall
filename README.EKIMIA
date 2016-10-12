@@ -3,7 +3,7 @@
  
  -- 16.04.1 
  
- - Install 16.04.1 in Bios legacy mode , partition in Manual mode with 4 GB swap  
+ - Install 16.04.1 in Bios legacy mode , partition in Manual mode with Partition 1 : /  - Partition 2 : 4 GB swap  
  
  - Clone this repo on machine 
  
