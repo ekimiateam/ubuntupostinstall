@@ -9,7 +9,7 @@
  
  - Do manual Step from TODO File
  
- - Launch script with  	sudo python ubuntu-14.04-postinstall.py - c ubuntu-16.04-unity-postinstall.cfg
+ - Launch script with  	sudo python ubuntu-14.04-postinstall.py -c ubuntu-16.04-unity-postinstall.cfg
  
  - Set ekimia WallPaper
  
