@@ -24,6 +24,8 @@ They can be rearranged
 - Intel  pstates ? -> 
 - Fix for the Language window appearing afeter user creation
 - Enable Verr Num when the keyboard has a Num pad like W550SU1
+- Automatic setting of gconf settings see system76 driver using a file in /usr/share/glib-2.0/schemas : [org.gnome.desktop.background]
+picture-uri = 'file:///usr/share/backgrounds/System76-Fractal_Mountains-by_Kate_Hazen_of_System76.png'
 - Update nautilus options to ask to run shell script
 
 ---------------------- DONE (Manual) ----------------------------------
