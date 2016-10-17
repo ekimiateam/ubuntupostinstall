@@ -5,7 +5,7 @@ They can be rearranged
 --------------------- TODO ----------------------------
 
 
-- Update GRUB_RECORDFAIL_TIMEOUT=1 so oem-config does not show grub
+
 - Install TLP project ( to be tested ) 
 - Put the machine in oem mode using oem-config-prepare
 - Intégrate swapspace ( http://pqxx.org/development/swapspace/) : no more disk space wasted
@@ -30,6 +30,8 @@ picture-uri = 'file:///usr/share/backgrounds/System76-Fractal_Mountains-by_Kate_
 
 ---------------------- DONE (Manual) ----------------------------------
 
+
+- Update GRUB_RECORDFAIL_TIMEOUT=1 so oem-config does not show grub
 - enable canonical partner repo
 - enable better defaults for updates ( Check every 2 days,download  security auto, show others every 2 weeks )
 - Enable sleep on lid close
