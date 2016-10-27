@@ -21,18 +21,17 @@
  
  - Prepare Image : sudo oem-config-prepare
  
- - Boot on fog with PXE : Full Register machine
+ - ON Fog web interface create the Image $DistroName.$Distroversion.$Date in the Images Menu
  
- - ON Fog web interface associate machine with a new image Ubuntu.16.04.1_DD.MM.YY
+ - Boot on fog with PXE : Full Register machine - Select the image $DistroName.$Distroversion.$Date (ie Ubuntu.16.04.1.DD.MM.YY ) 
  
- - Create a simple tasks on Fog for uploading this machine.
+ - ON Fog web interface go to the host config page, and create a simple task "Upload"
  
- - Reboot again the machine on Fog , upload is automatic.
+ - Reboot again the machine on Fog , upload is automatic ( Can take up to 20 minutes) 
  
- - When finished set the QUICK registration in fog to the newly created image  Ubuntu.16.04.1_DD.MM.YY.
+ - To use this image when QUICK registration is used in clients, change in fog settings to  $DistroName.$Distroversion.$Date
+  
+ - Reboot again the machine on Fog but delete it from registry and do a quick registration.
  
- 
- - Reboot again the machine on Fog but delete it from registrey and do a quick registration.
- 
- - Then run the checkBox certification program to be Sure every thing is still alright.
+ - Optionnaly run the checkBox certification program to be Sure every thing is still alright.
  
