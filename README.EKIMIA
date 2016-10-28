@@ -25,7 +25,7 @@
  
  - Boot on fog with PXE : Full Register machine - Select the image $DistroName.$Distroversion.$Date (ie Ubuntu.16.04.1.DD.MM.YY ) 
  
- - ON Fog web interface go to the host config page, and create a simple task "Upload"
+ - ON Fog web interface go to the hosts config page, click on the machine,  and create a basic task "Upload"
  
  - Reboot again the machine on Fog , upload is automatic ( Can take up to 20 minutes) 
  
