@@ -21,7 +21,7 @@
  
  - Prepare Image : sudo oem-config-prepare
  
- - ON Fog web interface create the Image $DistroName.$Distroversion.$Date in the Images Menu
+ - ON Fog web interface create the Image $DistroName.$Distroversion.$Date in the Images Menu ( Sigle Disk Resisable ) 
  
  - Boot on fog with PXE : Full Register machine - Select the image $DistroName.$Distroversion.$Date (ie Ubuntu.16.04.1.DD.MM.YY ) 
  
