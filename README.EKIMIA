@@ -3,6 +3,9 @@
  
  -- 16.04.1 
  
+ 
+ ------ Image creation   ----  
+ 
  -- Put only the SSD ( Not a second disk) in the machine
  
  - Install 16.04.1 in Bios legacy BIOS mode (NO UEFI)  , partition in Manual mode /dev/sda with Partition 1 : /  - Partition 2 : 4 GB swap  
@@ -17,9 +20,11 @@
  
  - Launch script again 
  
- - run the checkBox certification program to be Sure every thing is alright.
+ - run the checkBox certification program to be sure every thing is alright.
  
- - Prepare Image : sudo oem-config-prepare
+ - Put system in OEM mode : sudo oem-config-prepare
+ 
+  ------ Image Upload    ----  
  
  - ON Fog web interface create the Image $DistroName.$Distroversion.$Date in the Images Menu ( Sigle Disk Resisable ) 
  
@@ -28,6 +33,8 @@
  - ON Fog web interface go to the hosts config page, click on the machine,  and create a basic task "Upload"
  
  - Reboot again the machine on Fog , upload is automatic ( Can take up to 20 minutes) 
+ 
+  ------ Image deploy on new machine   ----  
  
  - To use this image when QUICK registration is used in clients, change in fog settings to  $DistroName.$Distroversion.$Date
   
