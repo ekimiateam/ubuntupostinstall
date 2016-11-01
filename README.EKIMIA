@@ -8,7 +8,7 @@
  
  -- Put only the SSD ( Not a second disk) in the machine
  
- - Install 16.04.1 in Bios legacy BIOS mode (NO UEFI)  , partition in Manual mode /dev/sda with Partition 1 : /  - Partition 2 : 4 GB swap  
+ - Install 16.04.1 in Bios legacy BIOS mode (NO UEFI)  , partition in Manual mode ( 2 primary partitions) /dev/sda with Partition 1 : /  - Partition 2 : 4 GB swap  
  
  - Clone this repo on machine git clone https://github.com/EkimiaSAS/ubuntupostinstall.git
  
