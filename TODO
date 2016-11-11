@@ -5,7 +5,7 @@ They can be rearranged
 --------------------- TODO ----------------------------
 
 
-
+- Groupware support : xul-ext-lightning , google mail/calendar in TB  ?
 - Install TLP project ( to be tested ) 
 - Put the machine in oem mode using oem-config-prepare
 - Intégrate swapspace ( http://pqxx.org/development/swapspace/) : no more disk space wasted
