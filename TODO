@@ -27,6 +27,8 @@ They can be rearranged
 - Automatic setting of gconf settings see system76 driver using a file in /usr/share/glib-2.0/schemas : [org.gnome.desktop.background]
 picture-uri = 'file:///usr/share/backgrounds/System76-Fractal_Mountains-by_Kate_Hazen_of_System76.png'
 - Update nautilus options to ask to run shell script
+- Need To integrate the systemd service fix ( see system76 solution) to restart networkmanager on wake up to overcome this bug 
+https://bugs.launchpad.net/ubuntu/+source/network-manager/+bug/1574347
 
 ---------------------- DONE (Manual) ----------------------------------
 
