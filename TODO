@@ -6,7 +6,7 @@ They can be rearranged
 
 
 - Groupware support : xul-ext-lightning , google mail/calendar in TB  ?
-- Install TLP project ( to be tested ) 
+
 - Put the machine in oem mode using oem-config-prepare
 - Intégrate swapspace ( http://pqxx.org/development/swapspace/) : no more disk space wasted
 - Enable hibernation (not really possible without swapspace )
@@ -29,6 +29,7 @@ picture-uri = 'file:///usr/share/backgrounds/System76-Fractal_Mountains-by_Kate_
 - Update nautilus options to ask to run shell script
 - Need To integrate the systemd service fix ( see system76 solution) to restart networkmanager on wake up to overcome this bug 
 https://bugs.launchpad.net/ubuntu/+source/network-manager/+bug/1574347
+- Install TLP project ( to be tested ) -> Now in Xenial Repo ! 
 
 ---------------------- DONE (Manual) ----------------------------------
 
