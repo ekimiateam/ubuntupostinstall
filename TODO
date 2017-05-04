@@ -1,35 +1,41 @@
 Tasks are list by priority , end of file ,  the more important.
 They can be rearranged
 
-
+------------ WONTFIX -----------------
+- Need To integrate the systemd service fix ( see system76 solution) to restart networkmanager on wake up to overcome this bug 
+https://bugs.launchpad.net/ubuntu/+source/network-manager/+bug/1574347
+- Fix for the Language window appearing afeter user creation
 --------------------- TODO ----------------------------
 
 - Preinstall a battery run test like GNOME Battery bench tool
 - Groupware support : xul-ext-lightning , google mail/calendar in TB  ?
 
 - Put the machine in oem mode using oem-config-prepare
-- Intégrate swapspace ( http://pqxx.org/development/swapspace/) : no more disk space wasted
+
 - Enable hibernation (not really possible without swapspace )
 - Patch udev rules to include pid/vid for Epson Scanners and patch epson2.conf to declare the same pid/vid
-- Associate the exe files with wine to opened automagically ( even in browsers) 
+
 - Install the Main Printers drivers for OOTB functionning including network scanning ( Epson, Canon, Brother)
 - add a simple way to control the desktop of users, ondemand (gitso preinstalled but not click n go) 
 - Enable chromium GPU video decode
 - .bin files should executed instead of being opened with archiver
+
+- Associate the exe files with wine to opened automagically ( even in browsers) 
 
 - Enable Zswap ?
 - Disable the update-apt-xapi bs bug 655831 ( useful anymore ? )
 - Enable full GPU support on chrome (flag ignoregpublacklist) 
 - handle Aiplane mode for Clevo W840SU
 - Intel  pstates ? -> 
-- Fix for the Language window appearing afeter user creation
+
 - Enable Verr Num when the keyboard has a Num pad like W550SU1
 - Automatic setting of gconf settings see system76 driver using a file in /usr/share/glib-2.0/schemas : [org.gnome.desktop.background]
 picture-uri = 'file:///usr/share/backgrounds/System76-Fractal_Mountains-by_Kate_Hazen_of_System76.png'
 - Update nautilus options to ask to run shell script
-- Need To integrate the systemd service fix ( see system76 solution) to restart networkmanager on wake up to overcome this bug 
-https://bugs.launchpad.net/ubuntu/+source/network-manager/+bug/1574347
+
 - Install TLP project ( to be tested ) -> Now in Xenial Repo ! 
+
+- Intégrate swapspace ( http://pqxx.org/development/swapspace/) : no more disk space wasted
 
 ---------------------- DONE (Manual) ----------------------------------
 
