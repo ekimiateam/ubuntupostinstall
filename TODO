@@ -2,9 +2,10 @@ Tasks are list by priority , end of file ,  the more important.
 They can be rearranged
 
 ------------ WONTFIX -----------------
-- Need To integrate the systemd service fix ( see system76 solution) to restart networkmanager on wake up to overcome this bug 
-https://bugs.launchpad.net/ubuntu/+source/network-manager/+bug/1574347
+
 - Fix for the Language window appearing afeter user creation
+
+
 --------------------- TODO ----------------------------
 
 - Preinstall a battery run test like GNOME Battery bench tool
@@ -33,13 +34,13 @@ https://bugs.launchpad.net/ubuntu/+source/network-manager/+bug/1574347
 picture-uri = 'file:///usr/share/backgrounds/System76-Fractal_Mountains-by_Kate_Hazen_of_System76.png'
 - Update nautilus options to ask to run shell script
 
-- Install TLP project ( to be tested ) -> Now in Xenial Repo ! 
+
 
 - Intégrate swapspace ( http://pqxx.org/development/swapspace/) : no more disk space wasted
 
-- Fix WPA "device not ready" when oem-config finish 
+- Fix WPA "device not ready" when oem-config finish https://bugs.launchpad.net/ubuntu/+source/network-manager/+bug/1576024
 
----------------------- DONE (Manual) ----------------------------------
+---------------------- TO BE DONE (Manual) ----------------------------------
 
 
 - Update GRUB_RECORDFAIL_TIMEOUT=1 so oem-config does not show grub
@@ -55,6 +56,11 @@ First run
 Second run
 
 ---------------------- DONE ----------------------------------
+
+
+- Install TLP project ( to be tested ) -> Now in Xenial Repo ! 
+- Need To integrate the systemd service fix ( see system76 solution) to restart networkmanager on wake up to overcome this bug 
+https://bugs.launchpad.net/ubuntu/+source/network-manager/+bug/1574347
 - Disable Apport
 - To add for 16.04 : unity-tweak-tool
 - Clean the apt cache
