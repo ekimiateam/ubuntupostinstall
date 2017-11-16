@@ -18,7 +18,7 @@ They can be rearranged
 
 - Install the Main Printers drivers for OOTB functionning including network scanning ( Epson, Canon, Brother)
 - add a simple way to control the desktop of users, ondemand (gitso preinstalled but not click n go) 
-- Enable chromium GPU video decode
+- Enable chromium GPU video decode (Intel has made a PR to chromium in June 17
 - .bin files should executed instead of being opened with archiver
 
 - Associate the exe files with wine to opened automagically ( even in browsers) 
@@ -59,7 +59,7 @@ Second run
 
 ---------------------- DONE ----------------------------------
 
-
+- Fix WPA "device not ready" when oem-config finish https://bugs.launchpad.net/ubuntu/+source/network-manager/+bug/1576024
 - Install TLP project ( to be tested ) -> Now in Xenial Repo ! 
 - Need To integrate the systemd service fix ( see system76 solution) to restart networkmanager on wake up to overcome this bug 
 https://bugs.launchpad.net/ubuntu/+source/network-manager/+bug/1574347
