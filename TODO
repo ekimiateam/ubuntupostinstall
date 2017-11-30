@@ -35,10 +35,11 @@ picture-uri = 'file:///usr/share/backgrounds/System76-Fractal_Mountains-by_Kate_
 - Update nautilus options to ask to run shell script
 
 
+- Integrate swapspace ( http://pqxx.org/development/swapspace/) : no more disk space wasted
 
-- Intégrate swapspace ( http://pqxx.org/development/swapspace/) : no more disk space wasted
+- Make chromium ignore the GPU blacklist
 
-- Fix WPA "device not ready" when oem-config finish https://bugs.launchpad.net/ubuntu/+source/network-manager/+bug/1576024
+- Enable the videoGPU decoder flag in chromium when Intel/chromium will accept the patch.
 
 ---------------------- TO BE DONE (Manual) ----------------------------------
 
