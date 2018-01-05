@@ -17,6 +17,8 @@ They can be rearranged
 - Patch udev rules to include pid/vid for Epson Scanners and patch epson2.conf to declare the same pid/vid
 
 - Install the Main Printers drivers for OOTB functionning including network scanning ( Epson, Canon, Brother)
+Maybe use the epson repo for auto install ? http://download.ebz.epson.net/faq/linux/faq_li_00027.html
+
 - add a simple way to control the desktop of users, ondemand (gitso preinstalled but not click n go) 
 - Enable chromium GPU video decode (Intel has made a PR to chromium in June 17
 - .bin files should executed instead of being opened with archiver
