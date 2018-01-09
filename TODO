@@ -7,7 +7,7 @@ They can be rearranged
 
 
 --------------------- TODO ----------------------------
-
+- Consider using an apt-cache proxy during install https://www.tecmint.com/apt-cache-server-in-ubuntu/
 - Preinstall a battery run test like GNOME Battery bench tool
 - Groupware support : xul-ext-lightning , google mail/calendar in TB  ?
 
