@@ -3,45 +3,45 @@ They can be rearranged
 
 ------------ WONTFIX -----------------
 
-- Fix for the Language window appearing afeter user creation
-
 
 --------------------- TODO ----------------------------
 - Consider using an apt-cache proxy during install https://www.tecmint.com/apt-cache-server-in-ubuntu/
+
 - Preinstall a battery run test like GNOME Battery bench tool
+
 - Groupware support : xul-ext-lightning , google mail/calendar in TB  ?
 
-- Put the machine in oem mode using oem-config-prepare
-
 - Enable hibernation (not really possible without swapspace )
+
 - Patch udev rules to include pid/vid for Epson Scanners and patch epson2.conf to declare the same pid/vid
 
 - Install the Main Printers drivers for OOTB functionning including network scanning ( Epson, Canon, Brother)
 Maybe use the epson repo for auto install ? http://download.ebz.epson.net/faq/linux/faq_li_00027.html
 
 - add a simple way to control the desktop of users, ondemand (gitso preinstalled but not click n go) 
-- Enable chromium GPU video decode (Intel has made a PR to chromium in June 17
+
 - .bin files should executed instead of being opened with archiver
 
-- Associate the exe files with wine to opened automagically ( even in browsers) 
+- Associate the exe files with wine to opened automagically ( even in browsers ?) 
 
 - Enable Zswap ?
+
 - Disable the update-apt-xapi bs bug 655831 ( useful anymore ? )
-- Enable full GPU support on chrome (flag ignoregpublacklist) 
-- handle Aiplane mode for Clevo W840SU
-- Intel  pstates ? -> 
+
+- handle Airplane/Led keyboard control for Clevo models https://github.com/zackboll/clevo-xsm-wmi
 
 - Enable Verr Num when the keyboard has a Num pad like W550SU1
+
 - Automatic setting of gconf settings see system76 driver using a file in /usr/share/glib-2.0/schemas : [org.gnome.desktop.background]
 picture-uri = 'file:///usr/share/backgrounds/System76-Fractal_Mountains-by_Kate_Hazen_of_System76.png'
+
 - Update nautilus options to ask to run shell script
 
-
-- Integrate swapspace ( http://pqxx.org/development/swapspace/) : no more disk space wasted
+- Integrate swapspace ( http://pqxx.org/development/swapspace/) : no more disk space wasted ( already in 18.04 ) 
 
 - Make chromium ignore the GPU blacklist
 
-- Enable the videoGPU decoder flag in chromium when Intel/chromium will accept the patch.
+- Enable the videoGPU decoder flag in chromium when Intel/chromium will accept the patch. June 17
 
 ---------------------- TO BE DONE (Manual) ----------------------------------
 
