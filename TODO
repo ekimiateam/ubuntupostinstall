@@ -43,6 +43,8 @@ picture-uri = 'file:///usr/share/backgrounds/System76-Fractal_Mountains-by_Kate_
 
 - Enable the videoGPU decoder flag in chromium when Intel/chromium will accept the patch. June 17
 
+Show app button at top in gnome3 : gsettings set org.gnome.shell.extensions.dash-to-dock show-apps-at-top true
+
 ---------------------- TO BE DONE (Manual) ----------------------------------
 
 
