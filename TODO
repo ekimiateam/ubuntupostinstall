@@ -43,6 +43,10 @@ picture-uri = 'file:///usr/share/backgrounds/System76-Fractal_Mountains-by_Kate_
 
 - Enable the videoGPU decoder flag in chromium when Intel/chromium will accept the patch. June 17
 
+- Edit the default prefs in chromium using https://github.com/andreashuber69/os-setup/blob/master/common/reset-browser-preferences
+
+ans put the conf file in skel dir 
+
 Show app button at top in gnome3 : gsettings set org.gnome.shell.extensions.dash-to-dock show-apps-at-top true
 
 SHow battery percentage gsettings set org.gnome.desktop.interface show-battery-percentage true
