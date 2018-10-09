@@ -53,6 +53,8 @@ ans put the conf file in skel dir
 
 Show app button at top in gnome3 : gsettings set org.gnome.shell.extensions.dash-to-dock show-apps-at-top true
 
+modify in dconf " og.gnome/desktop/input-sources/xkb-options " to have the CAPS LOCK behaviour like windows
+
 SHow battery percentage gsettings set org.gnome.desktop.interface show-battery-percentage true
 
 ---------------------- TO BE DONE (Manual) ----------------------------------
