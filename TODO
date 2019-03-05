@@ -37,8 +37,6 @@ picture-uri = 'file:///usr/share/backgrounds/System76-Fractal_Mountains-by_Kate_
 
 - Update nautilus options to ask to run shell script
 
-- Integrate swapspace ( http://pqxx.org/development/swapspace/) : no more disk space wasted ( already in 18.04 ) 
-
 - Make chromium ignore the GPU blacklist
 
 - Enable the videoGPU decoder flag in chromium when Intel/chromium will accept the patch. June 17
@@ -51,11 +49,9 @@ ans put the conf file in skel dir
 
 - Preinstall extensions gnomeshell for chromium https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep 
 
-Show app button at top in gnome3 : gsettings set org.gnome.shell.extensions.dash-to-dock show-apps-at-top true
 
 modify in dconf " og.gnome/desktop/input-sources/xkb-options " to have the CAPS LOCK behaviour like windows
 
-SHow battery percentage gsettings set org.gnome.desktop.interface show-battery-percentage true
 
 ---------------------- TO BE DONE (Manual) ----------------------------------
 
@@ -75,6 +71,10 @@ First run
 Second run
 
 ---------------------- DONE ----------------------------------
+
+Show app button at top in gnome3 : gsettings set org.gnome.shell.extensions.dash-to-dock show-apps-at-top true
+
+SHow battery percentage gsettings set org.gnome.desktop.interface show-battery-percentage true
 
 - Fix WPA "device not ready" when oem-config finish https://bugs.launchpad.net/ubuntu/+source/network-manager/+bug/1576024
 - Install TLP project ( to be tested ) -> Now in Xenial Repo ! 
