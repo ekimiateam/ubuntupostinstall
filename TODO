@@ -18,7 +18,7 @@ They can be rearranged
 - Install the Main Printers drivers for OOTB functionning including network scanning ( Epson, Canon, Brother)
 Maybe use the epson repo for auto install ? http://download.ebz.epson.net/faq/linux/faq_li_00027.html
 
-- add a simple way to control the desktop of users, ondemand (gitso preinstalled but not click n go) 
+- add a simple way to control the desktop of users, ondemand (gitso preinstalled but not click n go -> dwservice ) 
 
 - .bin files should executed instead of being opened with archiver
 
@@ -35,7 +35,7 @@ Maybe use the epson repo for auto install ? http://download.ebz.epson.net/faq/li
 - Automatic setting of gconf settings see system76 driver using a file in /usr/share/glib-2.0/schemas : [org.gnome.desktop.background]
 picture-uri = 'file:///usr/share/backgrounds/System76-Fractal_Mountains-by_Kate_Hazen_of_System76.png'
 
-- Update nautilus options to ask to run shell script
+
 
 - Make chromium ignore the GPU blacklist
 
@@ -49,8 +49,7 @@ ans put the conf file in skel dir
 
 - Preinstall extensions gnomeshell for chromium https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep 
 
-
-modify in dconf " og.gnome/desktop/input-sources/xkb-options " to have the CAPS LOCK behaviour like windows
+- modify in dconf " og.gnome/desktop/input-sources/xkb-options " to have the CAPS LOCK behaviour like windows
 
 
 ---------------------- TO BE DONE (Manual) ----------------------------------
@@ -61,7 +60,7 @@ modify in dconf " og.gnome/desktop/input-sources/xkb-options " to have the CAPS 
 - enable better defaults for updates ( Check every 2 days,download  security auto, show others every 2 weeks )
 - Enable sleep on lid close
 - Enable Windows menu in the window title bar
-- Put size of launcher to 24
+
 - Show the % and time of battery as a default
 - Ajust Sleep timeout to 30 min
 
@@ -72,9 +71,13 @@ Second run
 
 ---------------------- DONE ----------------------------------
 
-Show app button at top in gnome3 : gsettings set org.gnome.shell.extensions.dash-to-dock show-apps-at-top true
+- Put size of launcher to 24
 
-SHow battery percentage gsettings set org.gnome.desktop.interface show-battery-percentage true
+- Update nautilus options to ask to run shell script
+
+- Show app button at top in gnome3 : gsettings set org.gnome.shell.extensions.dash-to-dock show-apps-at-top true
+
+- Show battery percentage gsettings set org.gnome.desktop.interface show-battery-percentage true
 
 - Fix WPA "device not ready" when oem-config finish https://bugs.launchpad.net/ubuntu/+source/network-manager/+bug/1576024
 - Install TLP project ( to be tested ) -> Now in Xenial Repo ! 
