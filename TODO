@@ -51,6 +51,8 @@ ans put the conf file in skel dir
 
 - modify in dconf " og.gnome/desktop/input-sources/xkb-options " to have the CAPS LOCK behaviour like windows
 
+- Default open all archive (ZIp tar.xz ) with nautilus AKA "extract here" : easier to send script to client
+
 
 ---------------------- TO BE DONE (Manual) ----------------------------------
 
