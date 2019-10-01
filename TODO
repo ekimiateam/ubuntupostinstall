@@ -5,6 +5,14 @@ They can be rearranged
 
 
 --------------------- TODO ----------------------------
+
+Mime handlers
+
+- Default open all archive (ZIp tar.xz ) with nautilus AKA "extract here" ( in ~/.config/mimeapps.list ) : easier to send script to client
+- .bin files should executed instead of being opened with archiver
+- Associate the exe files with wine to opened automagically : sudo cp /usr/share/doc/wine-stable/examples/wine.desktop /usr/share/applications/
+
+
 - Consider using an apt-cache proxy during install https://www.tecmint.com/apt-cache-server-in-ubuntu/
 
 - Preinstall a battery run test like GNOME Battery bench tool
@@ -19,10 +27,6 @@ They can be rearranged
 Maybe use the epson repo for auto install ? http://download.ebz.epson.net/faq/linux/faq_li_00027.html
 
 - add a simple way to control the desktop of users, ondemand (gitso preinstalled but not click n go -> dwservice ) 
-
-- .bin files should executed instead of being opened with archiver
-
-- Associate the exe files with wine to opened automagically ( even in browsers ?) 
 
 - Enable Zswap ?
 
@@ -51,7 +55,6 @@ ans put the conf file in skel dir
 
 - modify in dconf " og.gnome/desktop/input-sources/xkb-options " to have the CAPS LOCK behaviour like windows
 
-- Default open all archive (ZIp tar.xz ) with nautilus AKA "extract here" ( in ~/.config/mimeapps.list ) : easier to send script to client
 
 
 ---------------------- TO BE DONE (Manual) ----------------------------------
