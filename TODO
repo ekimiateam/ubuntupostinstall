@@ -5,6 +5,15 @@ They can be rearranged
 
 
 --------------------- TODO ----------------------------
+- For kiosk mode your would : 
+
+-- Disable popup update windows 
+
+gsettings set com.ubuntu.update-notifier no-show-notifications true
+
+
+-- For normal mode : 
+
 
 Mime handlers
 
