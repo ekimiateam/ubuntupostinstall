@@ -15,6 +15,12 @@ gsettings set com.ubuntu.update-notifier no-show-notifications true
 -- For normal mode : 
 
 
+- some notifications steal focus , this  may be a solution  : 
+
+gsettings set org.gnome.desktop.wm.preferences focus-new-windows 'strict'
+
+
+
 Mime handlers
 
 - Default open all archive (ZIp tar.xz ) with nautilus AKA "extract here" ( in ~/.config/mimeapps.list ) : easier to send script to client
