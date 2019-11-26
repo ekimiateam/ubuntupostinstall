@@ -5,9 +5,9 @@ They can be rearranged
 
 
 --------------------- TODO ----------------------------
-- For kiosk mode your would : 
+*  For kiosk mode your would : 
 
--- Disable popup update windows 
+- Disable popup update windows 
 
 gsettings set com.ubuntu.update-notifier no-show-notifications true
 
@@ -21,11 +21,13 @@ gsettings set org.gnome.desktop.wm.preferences focus-new-windows 'strict'
 
 
 
-Mime handlers
+* Mime handlers
 
 - Default open all archive (ZIp tar.xz ) with nautilus AKA "extract here" ( in ~/.config/mimeapps.list ) : easier to send script to client
 - .bin files should executed instead of being opened with archiver
 - Associate the exe files with wine to opened automagically : sudo cp /usr/share/doc/wine-stable/examples/wine.desktop /usr/share/applications/
+
+* Other modification 
 
 
 - Consider using an apt-cache proxy during install https://www.tecmint.com/apt-cache-server-in-ubuntu/
