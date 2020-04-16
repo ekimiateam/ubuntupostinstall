@@ -1,3 +1,0 @@
-#!/bin/sh
-iwconfig wlan0 power off
-iwconfig wlan1 power off
