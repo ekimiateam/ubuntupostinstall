@@ -27,7 +27,7 @@ import ConfigParser
 # Global variables
 #-----------------------------------------------------------------------------
 
-_VERSION = "0.10.0"
+_VERSION = "0.2.0"
 _DEBUG = 1
 _LOG_FILE = "ubuntu-14.04-postinstall.log"
 _CONF_FILE = "https://github.com/freechelmi/ubuntupostinstall/raw/master/ubuntu-14.04-unity-postinstall.cfg"
@@ -35,12 +35,12 @@ _CONF_FILE = "https://github.com/freechelmi/ubuntupostinstall/raw/master/ubuntu-
 # System commands
 #-----------------------------------------------------------------------------
 
-_APT_ADD = "add-apt-repository -y"
-_APT_INSTALL = "DEBIAN_FRONTEND=noninteractive apt-get -y -f install"
-_APT_REMOVE = "DEBIAN_FRONTEND=noninteractive apt-get -y -f remove"
-_APT_UPDATE = "DEBIAN_FRONTEND=noninteractive apt-get -y update"
-_APT_UPGRADE = "DEBIAN_FRONTEND=noninteractive apt-get -y dist-upgrade"
-_APT_KEY = "apt-key adv --keyserver keyserver.ubuntu.com --recv-keys"
+_APT_ADD = "sudo add-apt-repository -y"
+_APT_INSTALL = "DEBIAN_FRONTEND=noninteractive sudo apt-get -y -f install"
+_APT_REMOVE = "DEBIAN_FRONTEND=noninteractive sudo apt-get -y -f remove"
+_APT_UPDATE = "DEBIAN_FRONTEND=noninteractive sudo apt-get -y update"
+_APT_UPGRADE = "DEBIAN_FRONTEND=noninteractive sudo apt-get -y dist-upgrade"
+_APT_KEY = "sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys"
 _WGET = "wget"
 
 # Classes
@@ -86,7 +86,7 @@ def syntax():
     """
     Print the script syntax
     """
-    print "Ubuntu 14.04 post installation script version %s" % _VERSION
+    print "Ubuntu 20.04 post installation script version %s" % _VERSION
     print ""
     print "Syntax: ubuntu-14.04-postinstall.py [-c cfgfile] [-h] [-v]"
     print "  -c cfgfile: Use the cfgfile instead of the default one"
@@ -255,13 +255,15 @@ def main(argv):
             exit()
 
     # Are your root ?
-    if (not isroot()):
-        showexec ("Script should be run as root", "tpastroot", exitonerror = 1)
+   # if (not isroot()):
+    #    showexec ("Script should be run as root", "tpastroot", exitonerror = 1)
         
     # Is it trusty ?
     _UBUNTU_VERSION = platform.linux_distribution()[2]
     #if (_UBUNTU_VERSION != "trusty"):
     #    showexec ("Script only for Ubuntu 14.04", "tpassousprecise", exitonerror = 1)
+    
+    print("This is Ubuntu version "+ _UBUNTU_VERSION)
     
     # Read the configuration file
     if (config_file == ""):
