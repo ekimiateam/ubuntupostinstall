@@ -36,10 +36,10 @@ _CONF_FILE = "https://github.com/freechelmi/ubuntupostinstall/raw/master/ubuntu-
 #-----------------------------------------------------------------------------
 
 _APT_ADD = "sudo add-apt-repository -y"
-_APT_INSTALL = "DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true sudo apt-get --no-install-recommends -y -f install"
-_APT_REMOVE = "DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true sudo apt-get -y -f remove"
-_APT_UPDATE = "DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true sudo apt-get -y update"
-_APT_UPGRADE = "DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true sudo apt-get -y upgrade"
+_APT_INSTALL = "sudo DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true apt --no-install-recommends -y install"
+_APT_REMOVE = "sudo DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true apt -y remove"
+_APT_UPDATE = "sudo DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true apt -y update"
+_APT_UPGRADE = "sudo DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true apt -y upgrade"
 _APT_KEY = "sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys"
 _WGET = "wget"
 
@@ -296,6 +296,8 @@ def main(argv):
     
     # Upgrade system
     showexec ("System upgrade (~20 mins, please be patient...)", _APT_UPGRADE)
+    
+    print("Now installing packages for "+ _UBUNTU_VERSION)
 
     # Parse and install packages
     for pkg_type, pkg_list in config.items("packages"):
