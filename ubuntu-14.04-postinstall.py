@@ -27,19 +27,19 @@ import ConfigParser
 # Global variables
 #-----------------------------------------------------------------------------
 
-_VERSION = "0.2.0"
+_VERSION = "0.3.0"
 _DEBUG = 1
-_LOG_FILE = "ubuntu-14.04-postinstall.log"
+_LOG_FILE = "ubuntu-20.04-postinstall.log"
 _CONF_FILE = "https://github.com/freechelmi/ubuntupostinstall/raw/master/ubuntu-14.04-unity-postinstall.cfg"
 
 # System commands
 #-----------------------------------------------------------------------------
 
 _APT_ADD = "sudo add-apt-repository -y"
-_APT_INSTALL = "DEBIAN_FRONTEND=noninteractive sudo apt-get -y -f install"
-_APT_REMOVE = "DEBIAN_FRONTEND=noninteractive sudo apt-get -y -f remove"
-_APT_UPDATE = "DEBIAN_FRONTEND=noninteractive sudo apt-get -y update"
-_APT_UPGRADE = "DEBIAN_FRONTEND=noninteractive sudo apt-get -y dist-upgrade"
+_APT_INSTALL = "DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true sudo apt-get --no-install-recommends -y -f install"
+_APT_REMOVE = "DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true sudo apt-get -y -f remove"
+_APT_UPDATE = "DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true sudo apt-get -y update"
+_APT_UPGRADE = "DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true sudo apt-get -y upgrade"
 _APT_KEY = "sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys"
 _WGET = "wget"
 
@@ -393,3 +393,4 @@ if __name__ == "__main__":
     init()
     main(sys.argv[1:])
     exit()
+    
