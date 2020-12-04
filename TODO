@@ -20,8 +20,12 @@ gsettings set com.ubuntu.update-notifier no-show-notifications true
 gsettings set org.gnome.desktop.wm.preferences focus-new-windows 'strict'
 
 
+* Keyboard backlight control GUI ? 
 
-* Mime handlers
+https://github.com/webketje/tuxedo-backlight-control
+
+
+* Mime handlers ( done , to verify ) 
 
 - Default open all archive (ZIp tar.xz ) with nautilus AKA "extract here" ( in ~/.config/mimeapps.list ) : easier to send script to client
 - .bin files should executed instead of being opened with archiver
