@@ -15,6 +15,10 @@ gsettings set com.ubuntu.update-notifier no-show-notifications true
 -- For normal mode : 
 
 
+- Make duckduckgo default search engine in Firefox
+    Dossier personnel/.mozila/firefox/4gsh3x9s.default-release/prefs.js
+        ligne 59 : user_pref("browser.urlbar.placeholderName", "DuckDuckGo");
+
 - some notifications steal focus , this  may be a solution  : 
 
 gsettings set org.gnome.desktop.wm.preferences focus-new-windows 'strict'
