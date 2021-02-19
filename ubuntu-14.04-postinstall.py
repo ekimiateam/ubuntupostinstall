@@ -36,10 +36,10 @@ _CONF_FILE = "https://github.com/freechelmi/ubuntupostinstall/raw/master/ubuntu-
 #-----------------------------------------------------------------------------
 
 _APT_ADD = "sudo add-apt-repository -y"
-_APT_INSTALL = "sudo DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true apt --no-install-recommends -y install"
-_APT_REMOVE = "sudo DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true apt -y remove"
-_APT_UPDATE = "sudo DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true apt -y update"
-_APT_UPGRADE = "sudo DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true apt -y upgrade"
+_APT_INSTALL = "sudo DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true apt install --no-install-recommends -y"
+_APT_REMOVE = "sudo DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true apt remove -y"
+_APT_UPDATE = "sudo DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true apt update -y"
+_APT_UPGRADE = "sudo DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true apt upgrade -y"
 _APT_KEY = "sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys"
 _WGET = "wget"
 
