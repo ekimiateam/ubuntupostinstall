@@ -22,7 +22,7 @@ import getopt
 import shutil
 import logging
 import getpass
-import ConfigParser
+import configparser
 
 # Global variables
 #-----------------------------------------------------------------------------
@@ -86,25 +86,25 @@ def syntax():
     """
     Print the script syntax
     """
-    print "Ubuntu 20.04 post installation script version %s" % _VERSION
-    print ""
-    print "Syntax: ubuntu-14.04-postinstall.py [-c cfgfile] [-h] [-v]"
-    print "  -c cfgfile: Use the cfgfile instead of the default one"
-    print "  -h        : Print the syntax and exit"
-    print "  -v        : Print the version and exit"
-    print ""
-    print "Exemples:"
-    print ""
-    print " # ubuntu-14.04-postinstall.py"
-    print " > Run the script with the default configuration file"
-    print "   %s" % _CONF_FILE
-    print ""
-    print " # ubuntu-14.04-postinstall.py -c ./myconf.cfg"
-    print " > Run the script with the ./myconf.cfg file"
-    print ""
-    print " # ubuntu-14.04-postinstall.py -c http://mysite.com/myconf.cfg"
-    print " > Run the script with the http://mysite.com/myconf.cfg configuration file"
-    print ""
+    print ("Ubuntu 20.04 post installation script version %s" % _VERSION)
+    print ("")
+    print ("Syntax: ubuntu-14.04-postinstall.py [-c cfgfile] [-h] [-v]")
+    print ("  -c cfgfile: Use the cfgfile instead of the default one")
+    print ("  -h        : Print the syntax and exit")
+    print ("  -v        : Print the version and exit")
+    print ("")
+    print ("Exemples:")
+    print ("")
+    print (" # ubuntu-14.04-postinstall.py")
+    print (" > Run the script with the default configuration file")
+    print ("   %s" % _CONF_FILE)
+    print ("")
+    print (" # ubuntu-14.04-postinstall.py -c ./myconf.cfg")
+    print (" > Run the script with the ./myconf.cfg file")
+    print ("")
+    print (" # ubuntu-14.04-postinstall.py -c http://mysite.com/myconf.cfg")
+    print (" > Run the script with the http://mysite.com/myconf.cfg configuration file")
+    print ("")
 
 
 def version():
@@ -259,7 +259,7 @@ def main(argv):
     #    showexec ("Script should be run as root", "tpastroot", exitonerror = 1)
         
     # Is it trusty ?
-    _UBUNTU_VERSION = platform.linux_distribution()[2]
+    _UBUNTU_VERSION = platform.version()[2]
     #if (_UBUNTU_VERSION != "trusty"):
     #    showexec ("Script only for Ubuntu 14.04", "tpassousprecise", exitonerror = 1)
     
@@ -269,7 +269,7 @@ def main(argv):
     if (config_file == ""):
         config_file = "/tmp/ubuntu-14.04-postinstall.cfg"
         showexec ("Download the configuration file", "rm -f "+config_file+" ; "+_WGET+" -O "+config_file+" "+config_url)        
-    config = ConfigParser.RawConfigParser()
+    config = configparser.RawConfigParser()
     config.read(config_file)
 
     if (config.has_section("gnome3") and config.has_section("unity")):
@@ -395,4 +395,3 @@ if __name__ == "__main__":
     init()
     main(sys.argv[1:])
     exit()
-    
