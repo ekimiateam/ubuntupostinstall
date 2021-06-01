@@ -263,11 +263,11 @@ def main(argv):
     #    showexec ("Script only for Ubuntu 14.04", "tpassousprecise", exitonerror = 1)
     
     print("This is Ubuntu version "+ _UBUNTU_VERSION)
-    config_file = "/home/oem/Documents/Git/projet_maj_drivers/ubuntupostinstall/ubuntu-20.04-unity-postinstall.cfg"
+    #config_file = "/home/oem/Documents/Git/projet_maj_drivers/ubuntupostinstall/ubuntu-20.04-unity-postinstall.cfg"
     # Read the configuration file
-    #if (config_file == ""):
-    #    config_file = "/tmp/ubuntu-14.04-postinstall.cfg"
-     #   showexec ("Download the configuration file", "rm -f "+config_file+" ; "+_WGET+" -O "+config_file+" "+config_url)        
+    if (config_file == ""):
+        config_file = "/tmp/ubuntu-14.04-postinstall.cfg"
+        showexec ("Download the configuration file", "rm -f "+config_file+" ; "+_WGET+" -O "+config_file+" "+config_url)        
     config = configparser.RawConfigParser()
     config.read(config_file)
 

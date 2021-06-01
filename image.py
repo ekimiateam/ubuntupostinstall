@@ -4,11 +4,12 @@ import platform
 gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
 
+
 def majdriver(button):
     #entrer le nom du script de màj
-   os.system('bash run.20.04.sh')
-
-os.system('cp /sys/devices/virtual/dmi/id/product_name .')
+    os.system('python3 ubuntu-14.04-postinstall.py -c ubuntu-20.04-unity-postinstall.cfg')
+    
+os.system('sudo cp /sys/devices/virtual/dmi/id/product_name .')
 
 with open('/sys/devices/virtual/dmi/id/bios_version') as f:
     ver_bios = f.readlines()
@@ -16,7 +17,6 @@ ver_bios_string = ""
 for i in ver_bios:
     ver_bios_string += i + " "
     ver_bios_string = ver_bios_string.rstrip()
-print(ver_bios_string) 
 
 kernel_ver = platform.release()
 os_ver = platform.version()
@@ -31,7 +31,6 @@ modele_string = ""
 for i in modele:
     modele_string += i + ""
     modele_string = modele_string.rstrip()
-print(modele_string)
 
 photo = modele_string + ".png"
 class GridWindow(Gtk.Window):
@@ -53,6 +52,7 @@ class GridWindow(Gtk.Window):
         label6 = Gtk.Label(os_ver)
         photo_jag = Gtk.Image()
         photo_jag.set_from_file(photo)
+        
 
         button1.connect('clicked', majdriver)
 
