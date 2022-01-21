@@ -1,4 +1,6 @@
 #!/bin/bash
+#reload packages first 
+sudo apt update
 echo "instaling old python"
 sudo apt install python2.7 -y
 
