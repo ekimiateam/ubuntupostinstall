@@ -1,0 +1,2 @@
+mkdir -p /etc/skel/snap/firefox
+cp -r /home/oem/snap/firefox/common /etc/skel/snap/firefox/
