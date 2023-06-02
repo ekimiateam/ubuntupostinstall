@@ -6,4 +6,4 @@ echo "# Getting git archive"
 wget https://github.com/EkimiaSAS/ubuntupostinstall/archive/master.zip -O ekimiadrivers-master.zip 
 unzip -o ekimiadrivers-master.zip 
 cd $dir_ekimia 
-bash run.py
+python run.py
