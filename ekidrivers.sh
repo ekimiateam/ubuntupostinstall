@@ -8,4 +8,4 @@ unzip -o ekimiadrivers-master.zip
 cd $dir_ekimia 
 echo " install python 2.7"
 sudo apt install python2.7
-python2.7 run.py
+python3 run.py
