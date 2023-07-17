@@ -42,7 +42,10 @@ options = {
     ('bionic', None): install_ubuntu_18,
     ('jammy', 'kubuntu'): install_kubuntu_22,
     ('focal', 'kubuntu'): install_kubuntu_20,
-    ('vanessa', None): install_mint_21
+    ('vanessa', None): install_mint_21,
+    ('vera', None): install_mint_21,
+    ('victoria', None): install_mint_21
+        
 }
 
 # Obtention des valeurs pertinentes pour la distribution
