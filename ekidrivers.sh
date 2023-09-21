@@ -7,5 +7,6 @@ wget https://github.com/EkimiaSAS/ubuntupostinstall/archive/master.zip -O ekimia
 unzip -o ekimiadrivers-master.zip 
 cd $dir_ekimia 
 echo " install python 2.7"
+sudo apt update
 sudo apt install python2.7 -y
 python3 run.py
