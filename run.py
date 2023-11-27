@@ -39,12 +39,12 @@ def install_mint_21(config_file):
 options = {
     ('jammy', 'ubuntu'): install_ubuntu_22,
     ('focal', 'ubuntu'): install_ubuntu_20,
-    ('bionic', ubuntu): install_ubuntu_18,
+    ('bionic', 'ubuntu'): install_ubuntu_18,
     ('jammy', 'kubuntu'): install_kubuntu_22,
     ('focal', 'kubuntu'): install_kubuntu_20,
-    ('vanessa', linuxmint): install_mint_21,
-    ('vera', linuxmint): install_mint_21,
-    ('victoria', linuxmint): install_mint_21
+    ('vanessa', 'linuxmint'): install_mint_21,
+    ('vera', 'linuxmint'): install_mint_21,
+    ('victoria', 'linuxmint'): install_mint_21
         
 }
 
