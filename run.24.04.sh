@@ -5,6 +5,7 @@ sudo apt upgrade -y
 sudo ubuntu-drivers autoinstall
 
 sudo apt install -y linux-generic-hwe-24.04
+sudo apt install -y links
 sudo apt install -y gimp gimp-plugin-registry cheese regionset libdvd-pkg gnome-sound-recorder
 sudo apt install -y nautilus-admin nautilus-image-converter ooo-thumbnailer
 sudo apt install -y htop preload gparted hardinfo xsensors synaptic gdebi mtp-tools dkms thermald net-tools lm-sensors
