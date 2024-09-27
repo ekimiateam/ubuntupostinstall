@@ -4,6 +4,11 @@ import distro
 
 config_file = "NoconfigFile"
 
+def install_ubuntu_24(config_file):
+    print('Installation pour Ubuntu 24')
+    config_file = "ubuntu-24.04-postinstall.cfg"
+    return config_file
+    
 def install_ubuntu_22(config_file):
     print('Installation pour Ubuntu 22')
     config_file = "ubuntu-22.04-postinstall.cfg"
@@ -37,6 +42,7 @@ def install_mint_21(config_file):
 
 # Dictionnaire des options
 options = {
+    ('noble', 'ubuntu'): install_ubuntu_24,
     ('jammy', 'ubuntu'): install_ubuntu_22,
     ('focal', 'ubuntu'): install_ubuntu_20,
     ('bionic', 'ubuntu'): install_ubuntu_18,
