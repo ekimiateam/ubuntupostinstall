@@ -2,8 +2,11 @@
 #reload packages first 
 sudo apt update 
 sudo apt upgrade -y
+
+#Install any drivers 
 sudo ubuntu-drivers autoinstall
 
+#Install packages
 sudo apt install -y linux-generic-hwe-24.04
 sudo apt install -y links
 sudo apt install -y gimp gimp-plugin-registry cheese regionset libdvd-pkg gnome-sound-recorder
@@ -26,12 +29,16 @@ sudo apt install -y sssd-ad sssd-tools realmd adcli
 sudo apt install -y gnome-software-plugin-flatpak
 sudo apt remove -y gnome-software-plugin-snap
 
+#Fix flatpak opening because Apparmor
+sudo cp ressources/bwrap /etc/apparmor.d/bwrap
+
 sudo dpkg-reconfigure --frontend=noninteractive libdvd-pkg
 
+#enable minimal languages
 sudo apt -y install `check-language-support -l fr`
 sudo apt -y install `check-language-support -l en`
 
-
+#Gnome GUI tuning
 gsettings set org.gnome.shell.extensions.dash-to-dock show-apps-at-top true
 gsettings set org.gnome.desktop.interface clock-show-seconds true
 gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false
@@ -40,15 +47,20 @@ gsettings set org.gnome.desktop.interface color-scheme prefer-dark
 gsettings set org.gnome.desktop.screensaver lock-enabled false
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action minimize
 
-
+#enable flathub and install apps
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+sudo flatpak install flathub org.mozilla.firefox -y
+
+#Remove useless apps 
 sudo apt remove -y totem* firefox
 sudo snap remove firefox snap-store
-sudo flatpak install flathub org.mozilla.firefox -y
+
+#Save config
 sudo mkdir -p /etc/skel/.config/dconf/
 sudo cp /home/oem/.config/dconf/user /etc/skel/.config/dconf/user
+
+#clean 
 sudo apt-get autoremove -y
 sudo apt-get clean
-
 
 echo "Finished"
