@@ -7,7 +7,6 @@ sudo apt upgrade -y
 sudo ubuntu-drivers autoinstall
 
 #Install packages
-sudo apt install -y linux-generic-hwe-24.04
 sudo apt install -y links
 sudo apt install -y gimp gimp-plugin-registry cheese regionset libdvd-pkg gnome-sound-recorder
 sudo apt install -y nautilus-admin nautilus-image-converter ooo-thumbnailer
@@ -32,7 +31,6 @@ sudo apt remove -y gnome-software-plugin-snap
 #Fix flatpak opening because Apparmor
 sudo cp ressources/bwrap /etc/apparmor.d/bwrap
 
-sudo dpkg-reconfigure --frontend=noninteractive libdvd-pkg
 
 #enable minimal languages
 sudo apt -y install `check-language-support -l fr`
@@ -53,11 +51,11 @@ sudo flatpak install flathub org.mozilla.firefox -y
 
 #Remove useless apps 
 sudo apt remove -y totem* firefox
-sudo snap remove firefox snap-store
+sudo snap remove firefox snap-store thunderbird
 
 #Save config
 sudo mkdir -p /etc/skel/.config/dconf/
-sudo cp /home/oem/.config/dconf/user /etc/skel/.config/dconf/user
+#sudo cp /home/oem/.config/dconf/user /etc/skel/.config/dconf/user
 
 #clean 
 sudo apt-get autoremove -y
