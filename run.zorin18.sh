@@ -1,13 +1,17 @@
 #!/bin/bash
-#reload packages first 
+
+# fail on first error
+set -o errexit
+
+# reload packages first 
 sudo apt update 
 sudo apt upgrade -y
 
-#Install any drivers 
+# Install any drivers 
 sudo ubuntu-drivers autoinstall
 
-#Install packages
-#DVD needs more work for libdvdcss to properly install
+# Install packages
+# DVD needs more work for libdvdcss to properly install
 #sudo apt install -y regionset libdvd-pkg gnome-sound-recorder
 sudo apt install -y nautilus-admin nautilus-image-converter ooo-thumbnailer
 sudo apt install -y htop preload gparted hardinfo xsensors mtp-tools dkms thermald net-tools lm-sensors
@@ -29,11 +33,11 @@ sudo apt remove -y gnome-software-plugin-snap
 
 
 
-#enable minimal languages
+# enable minimal languages
 sudo apt -y install `check-language-support -l fr`
 sudo apt -y install `check-language-support -l en`
 
-#Gnome GUI tuning
+# Gnome GUI tuning
 gsettings set org.gnome.desktop.interface clock-show-seconds true
 gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false
 gsettings set org.gnome.desktop.interface show-battery-percentage true
@@ -42,9 +46,9 @@ gsettings set org.gnome.desktop.screensaver lock-enabled false
 #gsettings set org.gnome.shell.extensions.dash-to-dock click-action minimize
 
 
-#Save config
-sudo mkdir -p /etc/skel/.config/dconf/
-#To sync params in oem mode
+# Save config
+#sudo mkdir -p /etc/skel/.config/dconf/
+# To sync params in oem mode
 #sudo cp /home/oem/.config/dconf/user /etc/skel/.config/dconf/user
 
 #clean 
