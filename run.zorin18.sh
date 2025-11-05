@@ -3,6 +3,9 @@
 # fail on first error
 set -o errexit
 
+# display the executed commands
+set -o verbose
+
 # reload packages first 
 sudo apt update 
 sudo apt upgrade -y
