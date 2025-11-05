@@ -1,6 +1,15 @@
 #!/bin/bash
+
+
+
+
 #reload packages first 
 sudo apt update 
+
+#control our kernel
+sudo apt remove -y linux-generic-hwe-24.04
+
+#upgrade all now 
 sudo apt upgrade -y
 
 #Install any drivers 
