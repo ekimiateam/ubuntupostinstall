@@ -35,7 +35,7 @@ sudo apt install -y sssd-ad sssd-tools realmd adcli
 sudo apt remove -y gnome-software-plugin-snap
 
 #oem-config
-sudo apt install oem-config-gtk ubiquity-frontend-gtk oem-config-slideshow-zorin-os ubiquity-slideshow-zorin-os
+sudo apt install -y oem-config-gtk ubiquity-frontend-gtk oem-config-slideshow-zorin-os ubiquity-slideshow-zorin-os
 
 # enable minimal languages
 sudo apt -y install `check-language-support -l fr`
