@@ -34,7 +34,8 @@ sudo apt install -y nextcloud-desktop nautilus-nextcloud
 sudo apt install -y sssd-ad sssd-tools realmd adcli
 sudo apt remove -y gnome-software-plugin-snap
 
-
+#oem-config
+sudo apt install oem-config-gtk ubiquity-frontend-gtk oem-config-slideshow-zorin-os ubiquity-slideshow-zorin-os
 
 # enable minimal languages
 sudo apt -y install `check-language-support -l fr`
@@ -50,9 +51,9 @@ gsettings set org.gnome.desktop.screensaver lock-enabled false
 
 
 # Save config
-#sudo mkdir -p /etc/skel/.config/dconf/
+sudo mkdir -p /etc/skel/.config/dconf/
 # To sync params in oem mode
-#sudo cp /home/oem/.config/dconf/user /etc/skel/.config/dconf/user
+sudo cp /home/oem/.config/dconf/user /etc/skel/.config/dconf/user
 
 #clean 
 sudo apt-get autoremove -y
