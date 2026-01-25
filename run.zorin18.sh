@@ -16,6 +16,7 @@ sudo ubuntu-drivers autoinstall
 # Install packages
 # DVD needs more work for libdvdcss to properly install
 sudo apt install -y regionset libdvd-pkg gnome-sound-recorder
+sudo dpkg-reconfigure libdvd-pkg
 sudo apt install -y nautilus-admin nautilus-image-converter ooo-thumbnailer
 sudo apt install -y htop gparted hardinfo xsensors mtp-tools dkms thermald net-tools lm-sensors
 sudo apt install -y gnome-tweak-tool dconf-editor
