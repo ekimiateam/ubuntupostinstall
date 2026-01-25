@@ -54,7 +54,10 @@ gsettings set org.gnome.desktop.screensaver lock-enabled false
 # Save config
 sudo mkdir -p /etc/skel/.config/dconf/
 # To sync params in oem mode
-sudo cp /home/oem/.config/dconf/user /etc/skel/.config/dconf/user
+if [ -d /home/oem ]
+then
+	sudo cp /home/oem/.config/dconf/user /etc/skel/.config/dconf/user
+fi
 
 #clean 
 sudo apt-get autoremove -y
