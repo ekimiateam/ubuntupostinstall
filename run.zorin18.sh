@@ -15,7 +15,11 @@ sudo ubuntu-drivers autoinstall
 
 # Install packages
 # DVD needs more work for libdvdcss to properly install
-#sudo apt install -y regionset libdvd-pkg gnome-sound-recorder
+sudo apt install -y regionset gnome-sound-recorder
+# do not ask questions using DEBIAN_PRIORITY
+sudo DEBIAN_PRIORITY=critical apt install -y libdvd-pkg
+sudo DEBIAN_PRIORITY=critical dpkg-reconfigure libdvd-pkg
+
 sudo apt install -y nautilus-admin nautilus-image-converter ooo-thumbnailer
 sudo apt install -y htop gparted hardinfo xsensors mtp-tools dkms thermald net-tools lm-sensors
 sudo apt install -y gnome-tweak-tool dconf-editor
@@ -37,9 +41,9 @@ sudo apt remove -y gnome-software-plugin-snap
 #oem-config
 sudo apt install -y oem-config-gtk ubiquity-frontend-gtk oem-config-slideshow-zorin-os ubiquity-slideshow-zorin-os
 
-# enable minimal languages
-sudo apt -y install `check-language-support -l fr`
-sudo apt -y install `check-language-support -l en`
+# Add missing l18n languages
+sudo apt -y install "$(check-language-support -l fr)"
+sudo apt -y install "$(check-language-support -l en)"
 
 # Gnome GUI tuning
 gsettings set org.gnome.desktop.interface clock-show-seconds true
@@ -53,7 +57,10 @@ gsettings set org.gnome.desktop.screensaver lock-enabled false
 # Save config
 sudo mkdir -p /etc/skel/.config/dconf/
 # To sync params in oem mode
-sudo cp /home/oem/.config/dconf/user /etc/skel/.config/dconf/user
+if [ -d /home/oem ]
+then
+	sudo cp /home/oem/.config/dconf/user /etc/skel/.config/dconf/user
+fi
 
 #clean 
 sudo apt-get autoremove -y
