@@ -42,8 +42,8 @@ sudo apt remove -y gnome-software-plugin-snap
 sudo apt install -y oem-config-gtk ubiquity-frontend-gtk oem-config-slideshow-zorin-os ubiquity-slideshow-zorin-os
 
 # Add missing l18n languages
-sudo apt -y install "$(check-language-support -l fr)"
-sudo apt -y install "$(check-language-support -l en)"
+sudo apt -y install $(check-language-support -l fr)
+sudo apt -y install $(check-language-support -l en)
 
 # Gnome GUI tuning
 gsettings set org.gnome.desktop.interface clock-show-seconds true
