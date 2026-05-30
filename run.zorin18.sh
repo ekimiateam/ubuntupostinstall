@@ -38,6 +38,8 @@ sudo apt install -y nextcloud-desktop nautilus-nextcloud
 sudo apt install -y sssd-ad sssd-tools realmd adcli
 sudo apt remove -y gnome-software-plugin-snap
 
+sudo apt install -y zorin-os-restricted-extras
+
 #oem-config
 sudo apt install -y oem-config-gtk ubiquity-frontend-gtk oem-config-slideshow-zorin-os ubiquity-slideshow-zorin-os
 
