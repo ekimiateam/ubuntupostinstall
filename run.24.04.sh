@@ -17,7 +17,7 @@ sudo ubuntu-drivers autoinstall
 
 #Install packages
 sudo apt install -y links
-sudo apt install -y gimp gimp-plugin-registry cheese regionset libdvd-pkg gnome-sound-recorder
+sudo apt install -y gimp gimp-plugin-registry cheese regionset gnome-sound-recorder
 sudo apt install -y nautilus-admin nautilus-image-converter ooo-thumbnailer
 sudo apt install -y htop preload gparted hardinfo xsensors synaptic gdebi mtp-tools dkms thermald net-tools lm-sensors
 sudo apt install -y gnome-tweak-tool dconf-editor
@@ -39,6 +39,11 @@ sudo apt remove -y gnome-software-plugin-snap
 
 #Fix flatpak opening because Apparmor
 sudo cp ressources/bwrap /etc/apparmor.d/bwrap
+
+
+# do not ask questions using DEBIAN_PRIORITY
+sudo DEBIAN_PRIORITY=critical apt install -y libdvd-pkg
+sudo DEBIAN_PRIORITY=critical dpkg-reconfigure libdvd-pkg
 
 
 #enable minimal languages
